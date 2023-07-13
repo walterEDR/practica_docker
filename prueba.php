@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Curso de Especialización 2023</h1>
-
+    <p>Texto prueba</p>
 </body>
 </html>
