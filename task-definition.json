@@ -1,0 +1,62 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:708304180824:task-definition/walterphp-app:1",
+    "containerDefinitions": [
+        {
+            "name": "walterphp-app",
+            "image": "708304180824.dkr.ecr.us-east-2.amazonaws.com/walterphp-app",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "name": "walterphp-app-80-tcp",
+                    "containerPort": 80,
+                    "hostPort": 80,
+                    "protocol": "tcp",
+                    "appProtocol": "http"
+                }
+            ],
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": []
+        }
+    ],
+    "family": "walterphp-app",
+    "executionRoleArn": "arn:aws:iam::708304180824:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "512",
+    "memory": "1024",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "registeredAt": "2023-07-13T15:18:31.271Z",
+    "registeredBy": "arn:aws:iam::708304180824:root",
+    "tags": []
+}
