@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-2:708304180824:task-definition/walterphp-app:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-2:708304180824:task-definition/walterphp-app:6",
     "containerDefinitions": [
         {
             "name": "walterphp-app",
@@ -23,14 +23,18 @@
         }
     ],
     "family": "walterphp-app",
+    "taskRoleArn": "arn:aws:iam::708304180824:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::708304180824:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
         {
             "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
         },
         {
             "name": "ecs.capability.execution-role-ecr-pull"
@@ -56,7 +60,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-07-13T15:18:31.271Z",
+    "registeredAt": "2023-07-13T16:59:30.676Z",
     "registeredBy": "arn:aws:iam::708304180824:root",
     "tags": []
 }
